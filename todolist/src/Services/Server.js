@@ -38,7 +38,7 @@ async function getTaskById(id) {
     return task
 }
 
-async function updateTaskById (id, newTask) {
+/* async function updateTaskById (id, newTask) {
     let header = {
         method: 'PUT',
         body: JSON.stringify(newTask),
@@ -51,7 +51,7 @@ async function updateTaskById (id, newTask) {
     let newTask = await answer.json()
 
     return newTask
-}
+} */
 
 async function deleteTaskById (id) {
     let header = {
@@ -69,6 +69,6 @@ export {
     getAllTasks,
     createTask,
     getTaskById,
-    updateTaskById,
+    /* updateTaskById, */
     deleteTaskById
 }
